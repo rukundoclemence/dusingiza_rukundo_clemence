@@ -66,12 +66,13 @@ This repository contains three systems implemented in Java for the purpose of an
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/your-repository-url
+   git clone https://github.com/rukundoclemence/dusingiza_rukundo_clemence.git
    ```
 
 2. **Navigate to the desired system folder and compile/run the Java files. For example:**
 
    ```bash
+   cd dusingiza_rukundo_clemence
    cd motor-insurance-system
    javac Main.java
    java Main
