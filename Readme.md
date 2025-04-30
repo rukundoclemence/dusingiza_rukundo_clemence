@@ -1,93 +1,125 @@
 ## Project Overview
 
- This repository contains three systems implemented in java for the only purposeof OOP Assignment:
- **1. Motor Insurance System:** Manages insurance, claims, and vehicles.
- **2. Online Shopping System:** Handles shopping items, carts, and payments.
- **3. Stock Management System:** Tracs inventory, suppliers, and warehouses.
+This repository contains three systems implemented in Java for the purpose of an OOP assignment:
+
+1. **Motor Insurance System:** Manages insurance, claims, and vehicles.
+2. **Online Shopping System:** Handles shopping items, carts, and payments.
+3. **Stock Management System:** Tracks inventory, suppliers, and warehouses.
 
 ## Prerequisites
 
- **Java Development Kit (JDK) 11 or later
- ** Docker installed on your system
+- Java Development Kit (JDK) 11 or later
+- Docker installed on your system
 
-## Setup Instructins
+## Setup Instructions
 
 ### Running the Project with Docker
 
- **Option 1: Build and Run Locally**
- **1. Build the Docker Image:
-       docker buid -t 26621-dusinginza-rukundo-clemence
- ** 2. Run the Docker Container: **
-       docker run -it 26621-dusinginza-rukundo-clemence
-**  3. Navigate and Execute: ** Inside the container, navigate to the desired system folder and compile/run the Java files. For example:
+#### Option 1: Build and Run Locally
 
-cd motor-insurance-system
-javac Main.java
-java Main
+1. **Build the Docker Image:**
 
-**Option 2: Use Docker Registry**
-**1. Pull the Prebuilt Docker Image:
-   docker pull rukundoclemence/26621-dusinginza-rukundo-clemence
-** 2. Run the Docker Container:
+   ```bash
+   docker build -t 26621-dusinginza-rukundo-clemence .
+   ```
+
+2. **Run the Docker Container:**
+
+   ```bash
    docker run -it 26621-dusinginza-rukundo-clemence
-** 3. Navigate and Execute: Inside the container, navigate to the desired system folder and compile/run the Java files. For example:
+   ```
 
-cd motor-insurance-system
-javac Main.java
-java Main
+3. **Navigate and Execute:**
+   Inside the container, navigate to the desired system folder and compile/run the Java files. For example:
 
-## Running Locally
+   ```bash
+   cd motor-insurance-system
+   javac Main.java
+   java Main
+   ```
 
-**1. Clone the repository:**
-git clone https: //github.com
+#### Option 2: Use Docker Registry
 
-** 2. Navigate to the desired system folder and compile/run the Java files. For example:
+1. **Pull the Prebuilt Docker Image:**
 
-cd motor-insurance-system
-javac Main.java
-java Main
+   ```bash
+   docker pull rukundoclemence/26621-dusinginza-rukundo-clemence
+   ```
+
+2. **Run the Docker Container:**
+
+   ```bash
+   docker run -it rukundoclemence/26621-dusinginza-rukundo-clemence
+   ```
+
+3. **Navigate and Execute:**
+   Inside the container, navigate to the desired system folder and compile/run the Java files. For example:
+
+   ```bash
+   cd motor-insurance-system
+   javac Main.java
+   java Main
+   ```
+
+### Running Locally
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/your-repository-url
+   ```
+
+2. **Navigate to the desired system folder and compile/run the Java files. For example:**
+
+   ```bash
+   cd motor-insurance-system
+   javac Main.java
+   java Main
+   ```
 
 ## Project Structure
 
+```
 Dockerfile
 Makefile
-readme.md
+Readme.md
 
 motor-insurance-system/
-         Claim.java
-         collisionPolicy.java
-         ComprehensivePolicy.java
-         InsurancePolicy.java
-         LiabilityPolicy.java
-         Main.java
-         Person.java
-         RoadsideAssistancePolicy.java
-         ThirdPartyPolicy.java
-         Vehicle.java
+    Claim.java
+    CollisionPolicy.java
+    ComprehensivePolicy.java
+    InsurancePolicy.java
+    LiabilityPolicy.java
+    Main.java
+    Person.java
+    RoadsideAssistancePolicy.java
+    ThirdPartyPolicy.java
+    Vehicle.java
 
-Online-shopping-system/
-        AccessoriesItem.java
-        BooksItem.java
-        ClothingItem.java
-        Customer.java
-        ElectronicsItem.java
-        GroceriesItem.java
-        Main.java
-        Payment.java
-        ShoppingCart.java
-        ShoppingItem.java
+online-shopping-system/
+    AccessoriesItem.java
+    BooksItem.java
+    ClothingItem.java
+    Customer.java
+    ElectronicsItem.java
+    GroceriesItem.java
+    Main.java
+    Payment.java
+    ShoppingCart.java
+    ShoppingItem.java
 
-Stock-management/
-        ClothingItem.java
-        ElectronicsItem.java
-        FurnitureItem.java
-        GroceryItem.java
-        Main.java
-        PerishableItem.java
-        Product.java
-        StockItem.java
-        Supplier.java
-        Warehouse.java
+stock-management/
+    ClothingItem.java
+    ElectronicsItem.java
+    FurnitureItem.java
+    GroceryItem.java
+    Main.java
+    PerishableItem.java
+    Product.java
+    StockItem.java
+    Supplier.java
+    Warehouse.java
+```
 
 ## License
 
